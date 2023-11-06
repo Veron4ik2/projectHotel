@@ -1,35 +1,81 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 .spisok li, a{
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
     text-decoration: none;
     list-style: none;
     display: inline-block;
-    padding: 0px 20px;
 }
 
-.logo a{
-    font-size: 2rem;
+.spisok ul li a{
+    color: rgba(31, 32, 65, 0.75);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    line-height:normal;
+    padding: 0 10px;		
+}
+
+.spisok ul{
+    position: relative;
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+.spisok .aboutme{
+    font-weight: 600;
+    font-size: 16px;
 }
 
 header .nav-bar{
-    padding: 30px 10%;
+    padding: 20px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Montserrat;
     background: #FFF;
     box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
 }
 
-button{
-    padding: 9px 25px;
-    background-color: #BC9CFF;
-    border: none;
+.buttons button{
+    font-weight: 700;
+    font-size: 14px;
+    font-family: Montserrat;
+    margin: 0 6px;
+    word-spacing: normal;
+}
+
+.buttons .btn1{
+    padding: 13px 30px;
+    background-color: #FFF;
+    color: rgba(188, 156, 255, 1);
+    text-transform: uppercase;
+    border: 2px solid rgba(188, 156, 255, 1);
     border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.btn1:hover{
+    background-color: #BC9CFF;
+    color: #FFF;
+}
+
+.buttons .btn2{
+    padding: 13px 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #BC9CFF;
+    border: 2px solid #BC9CFF;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn2:hover{
+    transform: scale(1.02);
 }
